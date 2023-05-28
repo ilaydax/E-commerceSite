@@ -1,0 +1,40 @@
+{% extends  'homebase.html' %}
+
+{% block title %} {{ setting.title }}   {% endblock %}
+{% block keywords %} {{ setting.keywords }} {% endblock %}
+{% block descriptions %}  {{ setting.descriptions }} {% endblock %}
+
+
+{% block sidebar %}
+    {% include 'sidebar.html' %}
+{% endblock %}
+
+
+{% block content %}
+
+	<!-- BREADCRUMB -->
+	<div id="breadcrumb">
+		<div class="container">
+			<ul class="breadcrumb">
+				<li><a href="/">ANASAYFA</a></li>
+				<li class="active">HAKKIMIZDA</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /BREADCRUMB -->
+
+	<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+                {{ setting.aboutus|safe }}
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /section -->
+
+{% endblock %}
