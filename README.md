@@ -1,7 +1,7 @@
 YazLab1-1
 # *E-commerce Site*
 </br>
-Python Django kullanılarak bir internet sitesi tasarlanmıştır.
+Website was designed using Python Django.
 </br>
 </br>
 
